@@ -14,13 +14,27 @@ input.addEventListener("keydown", function (event) {
 function create_list(){
     let i_value = input.value
     let li = document.createElement("li")
+    let span = document.createElement("span")
+    let icon = document.createElement("i")
     let text = document.createTextNode(i_value)
-    let text2 = document.createTextNode("x")
+    let btn = 
+
+    icon.className = "fa-solid fa-check"
     li.className = "list-style"
+
     li.appendChild(text)
-    li.appendChild(text2)
+    span.appendChild(icon)
+    li.appendChild(span)
     ul.appendChild(li)
     input.value = ""
+    li.addEventListener("dblclick", ()=>{
+        li.className = "list-done"
+        icon.className = "fa-solid fa-trash"
+    })
+    
+    icon.addEventListener("dblclick",()=>{
+        li.parentNode.removeChild(li);
+    })
     // console.log(i_value)
   
 }

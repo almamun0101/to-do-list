@@ -1,0 +1,26 @@
+.list-style {
+    border: 3px solid #82a1ff;
+    width: 400px;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 20px;
+    background: #bee3f8;
+    margin: 20px auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-done {
+    text-decoration: line-through;
+    border: 3px solid red;
+    font-weight: 100;
+    width: 400px;
+    font-size: 22px;
+    border-radius: 20px;
+    background: #bee3f8;
+    margin: 20px auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}

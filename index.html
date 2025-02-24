@@ -20,16 +20,22 @@
       class="border-2 p-3 font-medium w-120 rounded-2xl bg-white border-transparent focus:outline-0"
       placeholder="Create List Here">
 
-      <div class="counts flex text-center mx-auto">
-        <h3>0 List</h3>
-        <h3>0 List</h3>
-        <h3>0 List</h3>
+      <div class="counts flex text-center mx-auto justify-center gap-20 pt-5 text-2xl text-gray-600">
+        <h3><span id="count_list">0</span> List</h3>
+        <h3>
+          <span id="count_done">0</span> Complete</h3>
+        <h3>
+          <span id="count_left">0</span> 
+          Left
+        </h3>
       </div>
   </header>
 
   <ul id="list" class="text-center mt-6">
 
   </ul>
+
+  
 
   <script src="./src/script.js">
 
